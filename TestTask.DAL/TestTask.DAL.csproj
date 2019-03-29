@@ -81,6 +81,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="bin\Debug\TestTask.DAL.dll.config" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TestTask.DAL.csproj.CopyComplete" />
+    <None Include="obj\Debug\TestTask.DAL.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\TestTask.DAL.csprojAssemblyReference.cache" />
     <None Include="obj\Release\TestTask.DAL.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -95,9 +100,13 @@
     <Content Include="bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml" />
     <Content Include="bin\Debug\TestTask.DAL.dll" />
     <Content Include="bin\Debug\TestTask.DAL.pdb" />
+    <Content Include="obj\Debug\TestTask.DAL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TestTask.DAL.dll" />
+    <Content Include="obj\Debug\TestTask.DAL.pdb" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

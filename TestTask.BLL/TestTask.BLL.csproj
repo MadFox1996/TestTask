@@ -114,6 +114,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\TestTask.DAL.dll.config" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TestTask.BLL.csproj.CopyComplete" />
+    <None Include="obj\Debug\TestTask.BLL.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\TestTask.BLL.csprojAssemblyReference.cache" />
     <None Include="obj\Release\TestTask.BLL.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Release\TestTask.BLL.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
@@ -121,6 +126,7 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="BusinessModels\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\AutoMapper.dll" />
@@ -156,6 +162,9 @@
     <Content Include="bin\Debug\WebMatrix.Data.xml" />
     <Content Include="bin\Debug\WebMatrix.WebData.dll" />
     <Content Include="bin\Debug\WebMatrix.WebData.xml" />
+    <Content Include="obj\Debug\TestTask.BLL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TestTask.BLL.dll" />
+    <Content Include="obj\Debug\TestTask.BLL.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
