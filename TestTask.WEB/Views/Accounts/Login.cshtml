@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<form asp-controller="Accounts" asp-action="Login" method="post" role="form">
+    @Html.AntiForgeryToken()
+    <table>
+        <tr>
+            <td><p>Введите логин </p></td>
+            <td><input type="text" name="UserName" /> </td>
+        </tr>
+        <tr>
+            <td><p>Введите пароль :</p></td>
+            <td><input type="password" name="Password" /> </td>
+        </tr>
+        <tr>
+            <td><p>Подтвердите пароль :</p></td>
+            <td><input type="password" name="ConfirmPassword" /> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Отправить" /> </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
+<div>
+    @Html.ActionLink("Registration", "Register")
+</div>
