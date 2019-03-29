@@ -1,8 +1,6 @@
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.dll.config
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.dll
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.pdb
-C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\EntityFramework.dll
-C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\EntityFramework.xml
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csprojAssemblyReference.cache
@@ -10,7 +8,17 @@ C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csproj
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csproj.CopyComplete
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.dll
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.pdb
-C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\MadFox\source\repos\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.dll.config
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.dll
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\TestTask.DAL.pdb
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\EntityFramework.xml
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csprojAssemblyReference.cache
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csproj.CoreCompileInputs.cache
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.csproj.CopyComplete
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.dll
+C:\Users\MadFox\source\repos\New folder\TestTask\TestTask.DAL\obj\Debug\TestTask.DAL.pdb

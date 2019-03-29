@@ -2,6 +2,7 @@
     {
         enabled: true
     });
+Ext.Loader.setPath('Ext.ux', '../ux');
 Ext.require('Ext.container.Viewport');
 
 Ext.application({

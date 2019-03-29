@@ -7,15 +7,21 @@
     padding: 55,
 
     requires: [
-        'Ext.grid.column.Action'
+        'Ext.grid.column.Action',
+        'Ext.grid.*',
+        'Ext.data.*',
+        'Ext.ux.grid.FiltersFeature',
+        'Ext.toolbar.Paging',
+        'Ext.ux.ajax.JsonSimlet',
+        'Ext.ux.ajax.SimManager'
     ],
     xtype: 'array-grid',
-    stateful: true,
+    //stateful: true,
     stateId: 'stateGrid',
-    viewConfig: {
-        stripeRows: true,
-        enableTextSelection: true
-    },
+    //viewConfig: {
+    //    stripeRows: true,
+    //    enableTextSelection: true
+    //},
 
     layout: 'fit',
    
@@ -33,7 +39,12 @@
         },
 
         {
-            header: 'Status', dataIndex: 'status', flex: 1
+            header: 'Status', dataIndex: 'status', flex: 1, filterable: true,
+            filter: {
+                type: 'list',
+                store: Ext.data.StoreManager.lookup('OrderStore'),
+                options: ['New', 'Completed', 'Execution']
+            }
         },
 
         {
@@ -46,5 +57,8 @@
                     type: 'delete'
                 }]
         }
+    ],
+    features: [
+        { ftype: 'filters', local: true }
     ]
 });

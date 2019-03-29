@@ -55,33 +55,38 @@
 
         var bs = Ext.getStore('BasketStore');
 
-
-
         var record = Ext.create("UM.model.BasketModel");
-
 
         var exist = bs.findRecord('id', values.id);
 
-        if (exist != null)//Если товар уже добавлен
-        {
-            var newQuantity = Number(exist.data.QUANTITY) + Number(values.QUANTITY);
-            exist.set('QUANTITY', String(newQuantity));
-            bs.sync();
+        if (form.getForm().isValid()) {
+            if (exist != null)//Если товар уже добавлен
+            {
+                var newQuantity = Number(exist.data.QUANTITY) + Number(values.QUANTITY);
+                exist.set('QUANTITY', String(newQuantity));
+                bs.sync();
+            }
+            else {
+                record.set('id', values.id);
+                record.set('QUANTITY', values.QUANTITY);
+                record.set('CODE', values.CODE);
+                record.set('CATEGORY', values.CATEGORY);
+                record.set('PRICE', values.PRICE);
+                record.set('NAME', values.NAME);
+
+                record.phantom = true;
+                bs.add(record);
+                bs.sync();
+            }
         }
         else {
-            record.set('id', values.id);
-            record.set('QUANTITY', values.QUANTITY);
-            record.set('CODE', values.CODE);
-            record.set('CATEGORY', values.CATEGORY);
-            record.set('PRICE', values.PRICE);
-            record.set('NAME', values.NAME);
-
-            record.phantom = true;
-            bs.add(record);
-            bs.sync();
+            Ext.MessageBox.show({
+                title: "ERROR-A1001",
+                msg: "Please fill the required fields correctly.",
+                buttons: Ext.MessageBox.OK,
+                icon: Ext.MessageBox.WARNING
+            });
         }
-
-
         win.close();
     },
     resetBasket: function (button) {

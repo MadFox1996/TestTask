@@ -49,7 +49,8 @@
                         name: 'QUANTITY',
                         fieldLabel: 'Quantity:',
                         regex: /^[1-9][0-9]?$|^100$/,
-                        regexText: 'Only numbers allowed.'
+                        regexText: 'Only numbers allowed.',
+                        allowBlank: false
                     }
                 ]
             }
