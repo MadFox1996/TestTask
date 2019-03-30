@@ -140,15 +140,11 @@ namespace TestTask.WEB.Controllers
             string message = "Error: can't create a record";
             if (orderDto != null)
             {
-                //foreach (var item in orderDto)
-                //{
-                //    item.CustomerDTO = userDTO.CustomerDTO;
-                //    item.ORDER_DATE = DateTime.Now.ToUniversalTime();
-                //    orderservice.Create(item);
-                //}
+               
                 for (int i = 0; i < orderDto.Count(); i++)
                 {
                     orderDto[i].CustomerDTO = userDTO.CustomerDTO;
+                    orderDto[i].CustomerDTOid = userDTO.CustomerDTOid;
                     orderDto[i].ORDER_DATE = DateTime.Now.ToUniversalTime();
                     orderservice.Create(orderDto[i]);
                 }

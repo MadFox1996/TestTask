@@ -34,7 +34,6 @@
         if (form.getForm().isValid())
         {
             var order = store.findRecord('id', record.data.id);
-
             order.set('status', values.status);
             order.set('SHIPMENT_DATE', values.SHIPMENT_DATE);
             win.close();

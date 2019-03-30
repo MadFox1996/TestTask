@@ -25,7 +25,7 @@ namespace TestTask.BLL.Services
             { 
                 Order order = Mapper.Map<OrderDTO, Order>(orderDTO);
                 order.CustomerID = orderDTO.CustomerDTO.id;
-               
+                //order.Customer = Mapper.Map<CustomerDTO, Customer>(orderDTO.CustomerDTO);
                 Database.Orders.Create(order);
             }
             catch (Exception e)
@@ -65,12 +65,22 @@ namespace TestTask.BLL.Services
                 
                 List<OrderDTO> result = new List<OrderDTO>();
 
-                foreach (Order item in Database.Orders.GetAll().ToList())
+                //foreach (Order item in Database.Orders.GetAll().ToList())
+                //{
+                //    OrderDTO orderDTO = mapper.Map<Order, OrderDTO>(item);
+                //    orderDTO.CustomerDTOid = item.CustomerID;
+                //    result.Add(orderDTO);
+                //}
+
+                for (int i = 0; i < Database.Orders.GetAll().ToArray().Length; i++)
                 {
-                    OrderDTO orderDTO = mapper.Map<Order, OrderDTO>(item);
-                    orderDTO.CustomerDTOid = item.CustomerID;
+                    OrderDTO orderDTO = mapper.Map<Order, OrderDTO>(Database.Orders.GetAll().ToArray()[i]);
+                    var item = Database.Orders.GetAll().ToArray()[i];
+                    var id = item.CustomerID;
+                    orderDTO.CustomerDTOid = id;
                     result.Add(orderDTO);
                 }
+
                 return result;
             }
             catch (Exception e)
@@ -90,6 +100,7 @@ namespace TestTask.BLL.Services
             try
             {
                 Order order = Mapper.Map<OrderDTO, Order>(orderDTO);
+                order.CustomerID = orderDTO.CustomerDTOid;
                 Database.Orders.Update(order);
             }
             catch (Exception e)
